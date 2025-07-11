@@ -20,7 +20,7 @@ def change_contact(args, contacts):
 
 
 def show_phone(args, contacts):
-    name = args
+    name = args[0]
     if name in contacts:
         return contacts[name]
     else:
