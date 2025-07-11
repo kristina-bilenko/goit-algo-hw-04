@@ -8,7 +8,7 @@ def total_salary(path):
             try:
                 for line in file:
                     name, salary_str = line.strip().split(",")
-                    salary = int(salary_str)
+                    salary = float(salary_str)
                     total_sum += salary
                     workers_number += 1
             except Exception as exception_read:
